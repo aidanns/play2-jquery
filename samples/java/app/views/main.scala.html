@@ -1,0 +1,18 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+
+        @* Use the minified version in production, and the regular version for development *@
+        @minified = @{ if (play.Play.isProd()) ".min" else "" }
+
+        <script src="@routes.Assets.at("javascripts/jquery" + minified + ".js")" type="text/javascript"></script>
+
+    </head>
+    <body>
+        @content
+    </body>
+</html>
