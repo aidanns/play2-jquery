@@ -25,7 +25,7 @@ Add the following to the main section of your Build.sbt file:
 * `module` directory contains the Play! submodule.
 * `samples` directory contains a (very sparse) example of using the submodule.
 
-## Updating the bootstrap version
+## Updating the jQuery version
 
 This requires a working Python installation.
 
