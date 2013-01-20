@@ -6,7 +6,7 @@ Note that module runs against Play 2.1-RC1.
 
 ## What exactly does this module do?
 
-* Provides `*.js` and `*.min.js` files within the `public\javascripts` sub-directory of the classpath.
+* Provides `*.js` and `*.min.js` files within the `public/javascripts` sub-directory of the classpath.
 
 Assuming you maintain the default `GET  /assets/*file controllers.Assets.at(path="/public", file)` route from the skeleton, this means that the jQuery javascript files will be available at `/assets/*`.
 
@@ -29,7 +29,7 @@ Add the following to the main section of your Build.sbt file:
 
 This requires a working Python installation.
 
-1. `cd module\lib\jquery`
+1. `cd module/lib/jquery`
 2. `git pull`
 3. Build jQuery as per their instructions.
 4. `cd ../../`
